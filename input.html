@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Md Abdullah" />
+    <meta name="designer" content="Md Abdullah" />
+    <title>Let me know about yourself</title>
+    <link rel="icon" href="love.jpg" />
+    <style>
+      body {
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: sans-serif;
+        margin: 0;
+      }
+
+      form {
+        background: rgb(251, 250, 250);
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 20px rgb(255, 252, 252);
+        text-align: center;
+        width: 300px;
+      }
+
+      h2 {
+        margin-bottom: 1.5rem;
+        color: #e63946;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 0.5rem 1.2rem;
+        border: none;
+        background: #ff5c8d;
+        color: white;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #e63946;
+        box-shadow: 1px 1px 15px rgb(201, 10, 10);
+        background: linear-gradient(to right, #e91119, #eb7351);
+      }
+
+      .signature {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 0, 0, 0.71);
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1000;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 2s ease forwards 1s;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    </style>
+  </head>
+  <body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <h2>Let Me know About Yourself</h2>
+      <input
+        type="hidden"
+        name="access_key"
+        value="ef59c849-49ec-459d-b6e6-6990d8639d71"
+      />
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="tel" name="Phone" placeholder="Phone Number" required />
+      <input type="email" name="Email" placeholder="Email Address" required />
+      <input
+        type="url"
+        name="Link"
+        placeholder="Link (e.g., Facebook)"
+        required
+      />
+      <input type="text" name="Massage" placeholder="Send Massage" required />
+      <button type="submit">Send</button>
+    </form>
+
+    <footer class="signature">Made by <strong>Md Abdullah</strong></footer>
+  </body>
+</html>
