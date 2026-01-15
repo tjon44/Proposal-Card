@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Md Abdullah" />
     <meta name="designer" content="Md Abdullah" />
-    <title>Let me know about yourself</title>
+    <title>Send me message</title>
     <link rel="icon" href="love.jpg" />
     <style>
       body {
@@ -88,25 +88,19 @@
   </head>
   <body>
     <form action="https://api.web3forms.com/submit" method="POST">
-      <h2>Let Me know About Yourself</h2>
+      <h2>Send Me Message if you like</h2>
       <input
         type="hidden"
         name="access_key"
         value="ef59c849-49ec-459d-b6e6-6990d8639d71"
       />
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="tel" name="Phone" placeholder="Phone Number" required />
-      <input type="email" name="Email" placeholder="Email Address" required />
-      <input
-        type="url"
-        name="Link"
-        placeholder="Link (e.g., Facebook)"
-        required
-      />
-      <input type="text" name="Massage" placeholder="Send Massage" required />
+      <input type="text" name="Name" placeholder="Your Name" />
+      <input type="tel" name="Phone" placeholder="Phone Number" />
+      <input type="text" name="Massage" placeholder="Send Massage" required/>
       <button type="submit">Send</button>
     </form>
 
     <footer class="signature">Made by <strong>Md Abdullah</strong></footer>
   </body>
 </html>
+
